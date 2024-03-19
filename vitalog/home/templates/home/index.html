@@ -1,9 +1,81 @@
-<!-- other_template.html -->
 {% extends 'base.html' %}
+
+{% load static %}
 
 {% block title %}Page Title{% endblock %}
 
 {% block content %}
-<h1>This is the content of the child template</h1>
+
 <!-- Additional content goes here -->
+
+<div class="container">
+    <div class="row justify-content-between align-items-center mt-5 mb-5">
+        <div class="col-md-6 pl-md-4 pl-3 py-md-5 py-3">
+            <div class="text-lg">
+                <h1 class="text-deepBlue font-medium">Welcome to <span class="text-deepGreen font-bold">VitaloG</span></h1>
+                <h1 class="text-deepBlue font-bold">Your Health Journey</h1>
+                <h1 class="text-deepBlue font-bold">Our Community</h1>
+            </div>
+            <p class="text-sm mt-4">Health challenges can be overwhelming, and no one should navigate them alone.</p>
+            <a href="/" class="btn btn-success mt-3">Join our waitlist</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
+            <div class="position-absolute w-100 h-100 bg-black opacity-50"></div>
+            <img src="{% static 'img/community.png' %}" alt="people" class="img-fluid" style="color:transparent">
+        </div>
+    </div>
+</div>
+
+<section class="bg-myGreen">
+    <div class="container">
+        <div class="px-md-5 px-3 text-center py-7">
+            <p class="text-sm text-myGray font-semibold">
+                “At Vitalog, we tackle the isolation often felt in health challenges, acknowledging the vital necessity for support. Our solution transforms solitary patient journeys into a shared community experience, providing connection, understanding, and collective strength. We created a transformative platform, blending cutting-edge features to ensure you have the support you need every step of the way.”
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-myBrown">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mx-2 text-2xl font-bold text-center md:pb-12 lg:pb-12">Their Words, Our Inspiration.</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Card container -->
+            <div class="card-container">
+                <!-- Individual card components -->
+                <div class="card">
+                    <div class="front">
+                        <img src="{% static 'img/person1.png' %}" alt="" class="img-fluid pb-4">
+                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Anne C</h2>
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
+                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the above card structure for other persons -->
+                <div class="card">
+                    <div class="front">
+                        <img src="{% static 'img/person2.png' %}" alt="" class="img-fluid pb-4">
+                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Martha S</h2>
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
+                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}
