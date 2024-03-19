@@ -14,6 +14,9 @@
     <!-- Favicon -->
     <link rel="icon" href="{% static 'img/favicon.ico' %}">
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -22,47 +25,66 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Include any CSS or meta tags -->
 </head>
-<body>
+<body class="bg-myCream">
     <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="{% static 'img/vitalog.png' %}" alt="Logo" height="30"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-success">Join Our Waitlist</button>
-                    </li>
-                </ul>
-            </div>
+    <header class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-between align-items-center" style="padding-top: 35px; padding-bottom: 10px;"> <!-- Adjust spacing between logo and links -->
+          <a class="navbar-brand" href="#"><img src="{% static 'img/vitalog.png' %}" alt="Logo" height="50"></a> <!-- Increase the height of the logo -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-success">Join Our Waitlist</button>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
+      
 
     <!-- Content -->
-    <div class="container">
+    <div>
         {% block content %}
             <!-- Content of child templates will be placed here -->
         {% endblock %}
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light">
+    <footer class="bg-deepGreen text-light">
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <img src="{% static 'img/vitalog2.png' %}" alt="Logo" height="50">
                     <p>Empowering Health Dialogue and Support</p>
+                    <!--Social media link--> 
+                    <div class="flex flex-row gap-2">
+                        <a href="https://facebook.com" target="_blank" rel="nooperner" aria-label="Visit our Facebook page">
+                            <i class="fab fa-facebook-square ms-3 text-black fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="nooperner" aria-label="Visit our Twitter page">
+                            <i class="fab fa-twitter-square ms-3 text-black fa-lg"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="nooperner" aria-label="Visit our instagram page">
+                            <i class="fab fa-instagram-square ms-3 text-black fa-lg"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="nooperner" aria-label="Visit our Youtube page">
+                            <i class="fab fa-youtube-square ms-3 text-black fa-lg"></i>
+                        </a>
+                    </div>
+                    <br>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
@@ -95,6 +117,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

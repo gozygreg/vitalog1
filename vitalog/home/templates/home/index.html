@@ -6,8 +6,8 @@
 
 {% block content %}
 
-<!-- Additional content goes here -->
-
+<!-- WELCOME TO VITALOG SECTION -->
+<section class="no-padding no-margin">
 <div class="container">
     <div class="row justify-content-between align-items-center mt-5 mb-5">
         <div class="col-md-6 pl-md-4 pl-3 py-md-5 py-3">
@@ -25,18 +25,18 @@
         </div>
     </div>
 </div>
+</section>
 
-<section class="bg-myGreen">
+<!--CUSTOMER TESTIMONIAL SECTION-->
+<section class="bg-myGreen no-padding no-margin">
     <div class="container">
         <div class="px-md-5 px-3 text-center py-7">
+            <br>
             <p class="text-sm text-myGray font-semibold">
                 “At Vitalog, we tackle the isolation often felt in health challenges, acknowledging the vital necessity for support. Our solution transforms solitary patient journeys into a shared community experience, providing connection, understanding, and collective strength. We created a transformative platform, blending cutting-edge features to ensure you have the support you need every step of the way.”
             </p>
         </div>
     </div>
-</section>
-
-<section class="bg-myBrown">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -73,9 +73,196 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Repeat the above card structure for other persons -->
+                <div class="card">
+                    <div class="front">
+                        <img src="{% static 'img/person3.png' %}" alt="" class="img-fluid pb-4">
+                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Martha S</h2>
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
+                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat the above card structure for other persons -->
+                <div class="card">
+                    <div class="front">
+                        <img src="{% static 'img/person4.png' %}" alt="" class="img-fluid pb-4">
+                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Martha S</h2>
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
+                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- WHY VITALOG SECTION -->
+<section class="bg-myBrown no-padding no-margin">
+    <div class="container py-8">
+        <br>
+        <div class="font-bold text-2xl text-center py-8">
+            <h1 class="text-deepBlue">Why
+                <span class="text-deepGreen">VitaloG?</span>
+            </h1>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 mb-4">
+                <img src="{% static 'img/people.png' %}" alt="people" class="img-fluid rounded-2xl">
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/icon1.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Empowering Community Support</h2>
+                        <p class="text-myBlack text-justify mt-4">Join a resilient community of individuals on similar health journeys. Vitalog provides a diverse ecosystem of verified health professionals and empathetic peers, fostering a sense of belonging and support.</p>
+                    </div>
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/icon2.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Virtual Support Groups and Dedicated Chat Rooms</h2>
+                        <p class="text-myBlack text-justify mt-4">Engage in open dialogue and shared experiences through our virtual support groups and dedicated chat rooms. Connect with others facing similar challenges, exchange ideas, and find encouragement in a safe and inclusive space.</p>
+                    </div>
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/icon3.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Verified Health Professionals</h2>
+                        <p class="text-myBlack text-justify mt-4">Access personalized guidance from verified health professionals. Vitalog connects you with experts who can provide tailored advice through private consultations, ensuring you make informed decisions about your health.</p>
+                    </div>
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/icon4.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Informed Decision-Making</h2>
+                        <p class="text-myBlack text-justify mt-4">Navigate your health journey with confidence. Vitalog combines accurate information, peer support, and professional guidance to empower you with the knowledge needed to make informed decisions.</p>
+                    </div>
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/icon5.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Revolutionizing Healthcare Engagement</h2>
+                        <p class="text-myBlack text-justify mt-4">We're not just a platform; we're a movement. Vitalog transforms the healthcare experience, making it a collaborative journey where you are understood, supported, and connected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<!--BENEFITS OF VITALOG SECTION-->
+<section class="mt-[6%] no-padding no-margin">
+    <div class="container py-8">
+        <div class="font-bold text-2xl text-center py-8">
+            <br>
+            <h1 class="text-deepBlue">Unlock the Benefits of VitaloG:
+                <span class="text-deepGreen">A Health Journey Revolution</span>
+            </h1>
+            <p>At VitaloG, our platform is designed to empower a diverse range of individuals and organizations committed to the well-being of others. Here's how VitaloG caters to different needs.</p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/gameIcon.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Patients Seeking Support</h2>
+                        <p class="text-myBlack text-justify mt-4">Embark on your health journey with a strong support system. VitaloG offers a nurturing community where individuals facing health challenges can connect, share experiences, and find encouragement.</p>
+                        <div class="text-center md:pb-6 md:text-left">
+                            <a href>
+                                <button class="bg-white py-2 px-4 shadow text-deepGreen">Get Support</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/crossIcon.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Health Professionals Ready to Provide Help</h2>
+                        <p class="text-myBlack text-justify mt-4">Are you a healthcare professional eager to make a difference? VitaloG provides a platform for verified health professionals to offer private consultations, extending personalized guidance to those in need.</p>
+                        <div class="text-center md:pb-6 md:text-left">
+                            <a href>
+                                <button class="bg-white py-2 px-4 shadow text-deepGreen">Pre-Register</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/arrowIcon.png' %}" alt="icon" class="img-fluid">
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">Organizations Dedicated to Health Causes</h2>
+                        <p class="text-myBlack text-justify mt-4">For organizations devoted to health causes, VitaloG opens doors to a dynamic pool of members. Connect with a diverse community, spread awareness, and collaborate to make a collective impact on the well-being of individuals worldwide.</p>
+                        <div class="text-center md:pb-6 md:text-left">
+                            <a href>
+                                <button class="bg-white py-2 px-4 shadow text-deepGreen">Pre-Register</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="{% static 'img/people2.png' %}" alt="people" class="img-fluid rounded-2xl">
+            </div>
+        </div>
+    </div> 
+</section>
+
+<!--FAQ SECTION-->
+<section class="bg-myBrown no-padding no-margin">
+<div class="container py-8">
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+            <h1>Frequently asked Questions</h1>
+            <p class="text-sm"> Can't find what you're looking for? Explore our FAQs or contact us for further assistance.</p>
+            <img src="{% static 'img/man.png' %}" alt="people" class="img-fluid rounded-2xl">
+        </div>
+        <div class="col-md-6 align-items-center">
+            <div class="row">
+                <div class="col-md-10 mb-4">
+                    <h2 class="text-deepBlue font-bold mt-4">What is VitaloG</h2>
+                    <p class="text-myBlack text-justify mt-4">VitaloG is a friendly health community where people facing health challenges come together. Through virtual support groups, chat rooms, and access to verified professionals, it helps build connections and strength. With accurate information and friendly support, VitaloG helps you make better health choices. Join our community today and feel supported on your health journey.</p>
+                </div>
+                <div class="col-md-10 mb-4">
+                    <h2 class="text-deepBlue font-bold mt-4">How does it work</h2>
+                    <p class="text-myBlack text-justify mt-4">VitaloG works by allowing users to sign up and gain access to a supportive community of individuals facing similar health challenges. Within this community, users can connect with others, access verified information, and receive support from professionals. By facilitating these connections and resources, Vitalog aims to combat feelings of isolation and loneliness, fostering a sense of belonging and empowerment among its users.</p>
+                </div>
+                <div class="col-md-10 mb-4">
+                    <h2 class="text-deepBlue font-bold mt-4">How will you handle my medical details</h2>
+                    <p class="text-myBlack text-justify mt-4">We take the privacy and security of your medical details seriously at Vitalog, adhering to globally accepted standards to ensure your information is safeguarded. Our approach involves implementing robust encryption protocols to protect data both in transit and at rest. Additionally, we strictly adhere to regulations such as HIPAA (Health Insurance Portability and Accountability Act) and GDPR (General Data Protection Regulation), ensuring that your medical information is handled with the utmost confidentiality and transparency. Our platform is designed with privacy-enhancing features, granting you control over your data and enabling you to manage consent preferences. Rest assured that your medical details are treated with the highest level of care and security on Vitalog.</p>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="text-center px-4">Join VitaloG today! Register with your email to access exclusive benefits at launch and ensure you're the first to know when we go live. Your community awaits.</h1>
+        <br>
+        <h4 class="text-center px-4">Join our WaitList</h1>
+        <form class="row g-3 justify-content-center align-items-center">
+            <div class="col-md-6">
+                <input type="email" placeholder="Enter your email" class="form-control" name="email">
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn bg-deepGreen text-white">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br>
+</div> 
+</section>
+
 
 {% endblock %}
