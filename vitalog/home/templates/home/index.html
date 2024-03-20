@@ -7,17 +7,18 @@
 {% block content %}
 
 <!-- WELCOME TO VITALOG SECTION -->
-<section class="no-padding no-margin">
+<section>
 <div class="container">
-    <div class="row justify-content-between align-items-center mt-5 mb-5">
-        <div class="col-md-6 pl-md-4 pl-3 py-md-5 py-3">
+    <div class="row justify-content-center align-items-center mt-5 mb-5">
+        <div class="col-md-6">
             <div class="text-lg">
-                <h1 class="text-deepBlue font-medium">Welcome to <span class="text-deepGreen font-bold">VitaloG</span></h1>
-                <h1 class="text-deepBlue font-bold">Your Health Journey</h1>
-                <h1 class="text-deepBlue font-bold">Our Community</h1>
+                <h1 class="text-deepBlue">Welcome to <span class="text-deepGreen">VitaloG</span></h1>
+                <h1 class="text-deepBlue">Your Health Journey</h1>
+                <h1 class="text-deepBlue">Our Community</h1>
             </div>
-            <p class="text-sm mt-4">Health challenges can be overwhelming, and no one should navigate them alone.</p>
-            <a href="/" class="btn btn-success mt-3">Join our waitlist</a>
+            <p>Health challenges can be overwhelming, and no one should navigate them alone.</p>
+            <a href="/" class="btn btn-success">Join our waitlist</a> 
+            <hr class="d-md-none">
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
             <div class="position-absolute w-100 h-100 bg-black opacity-50"></div>
@@ -27,8 +28,8 @@
 </div>
 </section>
 
-<!--CUSTOMER TESTIMONIAL SECTION-->
-<section class="bg-myGreen no-padding no-margin">
+<!--CUSTOMER TESTIMONIAL SECTION 1-->
+<section class="bg-myGreen">
     <div class="container">
         <div class="px-md-5 px-3 text-center py-7">
             <br>
@@ -39,65 +40,152 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="mx-2 text-2xl font-bold text-center md:pb-12 lg:pb-12">Their Words, Our Inspiration.</h1>
+            <div class="col-md-12 mt-4">
+                <h2 class="text-center">Their Words, Our Inspiration.</h2>
             </div>
         </div>
+        <br>
+</section>
 
-        <div class="row">
-            <!-- Card container -->
-            <div class="card-container">
-                <!-- Individual card components -->
-                <div class="card">
-                    <div class="front">
-                        <img src="{% static 'img/person1.png' %}" alt="" class="img-fluid pb-4">
-                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Anne C</h2>
+<!--CUSTOMER TESTIMONIAL SECTION 2-->
+<section class="bg-myGreen">
+    <div class="container">
+        <!-- Carousel for Small Screens -->
+        <div class="d-md-none">
+            <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Card 1 -->
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="front">
+                                <img src="{% static 'img/person1.png' %}" alt="" class="img-fluid pb-4">
+                                <h2 class="text-center">Anne C</h2>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <h2 class="text-center">My Story</h2>
+                                    <p class="text-center">What ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="back">
-                        <div class="back-content">
-                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
-                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                    <!-- Card 2 -->
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="front">
+                                <img src="{% static 'img/person2.png' %}" alt="" class="img-fluid pb-4">
+                                <h2 class="text-center">Martha S</h2>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <h2 class="text-center">My Story</h2>
+                                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="front">
+                                <img src="{% static 'img/person3.png' %}" alt="" class="img-fluid pb-4">
+                                <h2 class="text-center">John D</h2>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <h2 class="text-center">My Story</h2>
+                                    <p class="text-center">Another ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="front">
+                                <img src="{% static 'img/person4.png' %}" alt="" class="img-fluid pb-4">
+                                <h2 class="text-center">Mark L</h2>
+                            </div>
+                            <div class="back">
+                                <div class="back-content">
+                                    <h2 class="text-center">My Story</h2>
+                                    <p class="text-center">Yet another ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Repeat the above card structure for other persons -->
-                <div class="card">
-                    <div class="front">
-                        <img src="{% static 'img/person2.png' %}" alt="" class="img-fluid pb-4">
-                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Martha S</h2>
-                    </div>
-                    <div class="back">
-                        <div class="back-content">
-                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
-                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Cards on Medium and Large Screens -->
+        <div class="d-none d-md-block">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="front">
+                            <img src="{% static 'img/person1.png' %}" alt="" class="img-fluid pb-4">
+                            <h2 class="text-center">Anne C</h2>
+                        </div>
+                        <div class="back">
+                            <div class="back-content">
+                                <h2 class="text-center">My Story</h2>
+                                <p class="text-center">What ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Repeat the above card structure for other persons -->
-                <div class="card">
-                    <div class="front">
-                        <img src="{% static 'img/person3.png' %}" alt="" class="img-fluid pb-4">
-                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Martha S</h2>
-                    </div>
-                    <div class="back">
-                        <div class="back-content">
-                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
-                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                <!-- Card 2 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="front">
+                            <img src="{% static 'img/person2.png' %}" alt="" class="img-fluid pb-4">
+                            <h2 class="text-center">Martha S</h2>
+                        </div>
+                        <div class="back">
+                            <div class="back-content">
+                                <h2 class="text-center">My Story</h2>
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Repeat the above card structure for other persons -->
-                <div class="card">
-                    <div class="front">
-                        <img src="{% static 'img/person4.png' %}" alt="" class="img-fluid pb-4">
-                        <h2 class="text-center py-4 text-black font-bold lg:py-6">Martha S</h2>
+                <!-- Card 3 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="front">
+                            <img src="{% static 'img/person3.png' %}" alt="" class="img-fluid pb-4">
+                            <h2 class="text-center">John D</h2>
+                        </div>
+                        <div class="back">
+                            <div class="back-content">
+                                <h2 class="text-center">My Story</h2>
+                                <p class="text-center">Another ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="back">
-                        <div class="back-content">
-                            <h2 class="m-[1%] text-white text-xl text-center pt-2 lg:m-[2%] ">My Story</h2>
-                            <p class="p-4 text-white text-[16px] text-justify md:text-[20px] lg:text-[12px] text-center xl:[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum, erat nec lobortis fringilla, nibh eros convallis mi, rhoncus pellentesque augue neque ut purus. Suspendisse congue tellus erat, a vehicula tortor vehicula et. Vestibulum convallis purus sit amet bibendum finibus. Sed tempor velit lorem, vel posuere eros semper eu. Quisque vitae pellentesque ante</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="front">
+                            <img src="{% static 'img/person4.png' %}" alt="" class="img-fluid pb-4">
+                            <h2 class="text-center">Mark L</h2>
+                        </div>
+                        <div class="back">
+                            <div class="back-content">
+                                <h2 class="text-center">My Story</h2>
+                                <p class="text-center">Yet another ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,12 +193,13 @@
         </div>
     </div>
 </section>
+   
 
 <!-- WHY VITALOG SECTION -->
-<section class="bg-myBrown no-padding no-margin">
-    <div class="container py-8">
+<section class="bg-myBrown">
+    <div class="container-fluid">
         <br>
-        <div class="font-bold text-2xl text-center py-8">
+        <div class="text-center">
             <h1 class="text-deepBlue">Why
                 <span class="text-deepGreen">VitaloG?</span>
             </h1>
@@ -163,9 +252,9 @@
 </section>
 
 <!--BENEFITS OF VITALOG SECTION-->
-<section class="mt-[6%] no-padding no-margin">
-    <div class="container py-8">
-        <div class="font-bold text-2xl text-center py-8">
+<section>
+    <div class="container-fluid">
+        <div class="text-center">
             <br>
             <h1 class="text-deepBlue">Unlock the Benefits of VitaloG:
                 <span class="text-deepGreen">A Health Journey Revolution</span>
@@ -179,11 +268,11 @@
                         <img src="{% static 'img/gameIcon.png' %}" alt="icon" class="img-fluid">
                     </div>
                     <div class="col-md-10 mb-4">
-                        <h2 class="text-deepBlue font-bold mt-4">Patients Seeking Support</h2>
+                        <h2 class="text-deepBlue mt-4">Patients Seeking Support</h2>
                         <p class="text-myBlack text-justify mt-4">Embark on your health journey with a strong support system. VitaloG offers a nurturing community where individuals facing health challenges can connect, share experiences, and find encouragement.</p>
-                        <div class="text-center md:pb-6 md:text-left">
+                        <div class="text-center">
                             <a href>
-                                <button class="bg-white py-2 px-4 shadow text-deepGreen">Get Support</button>
+                                <button class="bg-white py-2 px-4 shadow text-deepGreen" style="border-radius: 7.5px;" >Get Support</button>
                             </a>
                         </div>
                     </div>
@@ -195,7 +284,7 @@
                         <p class="text-myBlack text-justify mt-4">Are you a healthcare professional eager to make a difference? VitaloG provides a platform for verified health professionals to offer private consultations, extending personalized guidance to those in need.</p>
                         <div class="text-center md:pb-6 md:text-left">
                             <a href>
-                                <button class="bg-white py-2 px-4 shadow text-deepGreen">Pre-Register</button>
+                                <button class="bg-white py-2 px-4 shadow text-deepGreen" style="border-radius: 7.5px;" >Pre-Register</button>
                             </a>
                         </div>
                     </div>
@@ -207,7 +296,7 @@
                         <p class="text-myBlack text-justify mt-4">For organizations devoted to health causes, VitaloG opens doors to a dynamic pool of members. Connect with a diverse community, spread awareness, and collaborate to make a collective impact on the well-being of individuals worldwide.</p>
                         <div class="text-center md:pb-6 md:text-left">
                             <a href>
-                                <button class="bg-white py-2 px-4 shadow text-deepGreen">Pre-Register</button>
+                                <button class="bg-white py-2 px-4 shadow text-deepGreen" style="border-radius: 7.5px;" >Pre-Register</button>
                             </a>
                         </div>
                     </div>
@@ -222,47 +311,58 @@
 
 <!--FAQ SECTION-->
 <section class="bg-myBrown no-padding no-margin">
-<div class="container py-8">
-    <br>
-    <div class="row justify-content-center">
-        <div class="col-md-6 mb-4">
-            <h1>Frequently asked Questions</h1>
-            <p class="text-sm"> Can't find what you're looking for? Explore our FAQs or contact us for further assistance.</p>
-            <img src="{% static 'img/man.png' %}" alt="people" class="img-fluid rounded-2xl">
-        </div>
-        <div class="col-md-6 align-items-center">
-            <div class="row">
-                <div class="col-md-10 mb-4">
-                    <h2 class="text-deepBlue font-bold mt-4">What is VitaloG</h2>
-                    <p class="text-myBlack text-justify mt-4">VitaloG is a friendly health community where people facing health challenges come together. Through virtual support groups, chat rooms, and access to verified professionals, it helps build connections and strength. With accurate information and friendly support, VitaloG helps you make better health choices. Join our community today and feel supported on your health journey.</p>
-                </div>
-                <div class="col-md-10 mb-4">
-                    <h2 class="text-deepBlue font-bold mt-4">How does it work</h2>
-                    <p class="text-myBlack text-justify mt-4">VitaloG works by allowing users to sign up and gain access to a supportive community of individuals facing similar health challenges. Within this community, users can connect with others, access verified information, and receive support from professionals. By facilitating these connections and resources, Vitalog aims to combat feelings of isolation and loneliness, fostering a sense of belonging and empowerment among its users.</p>
-                </div>
-                <div class="col-md-10 mb-4">
-                    <h2 class="text-deepBlue font-bold mt-4">How will you handle my medical details</h2>
-                    <p class="text-myBlack text-justify mt-4">We take the privacy and security of your medical details seriously at Vitalog, adhering to globally accepted standards to ensure your information is safeguarded. Our approach involves implementing robust encryption protocols to protect data both in transit and at rest. Additionally, we strictly adhere to regulations such as HIPAA (Health Insurance Portability and Accountability Act) and GDPR (General Data Protection Regulation), ensuring that your medical information is handled with the utmost confidentiality and transparency. Our platform is designed with privacy-enhancing features, granting you control over your data and enabling you to manage consent preferences. Rest assured that your medical details are treated with the highest level of care and security on Vitalog.</p>
-                </div>   
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <h3 class="text-center px-4">Join VitaloG today! Register with your email to access exclusive benefits at launch and ensure you're the first to know when we go live. Your community awaits.</h1>
+    <div class="container-fluid py-8">
         <br>
-        <h4 class="text-center px-4">Join our WaitList</h1>
-        <form class="row g-3 justify-content-center align-items-center">
-            <div class="col-md-6">
-                <input type="email" placeholder="Enter your email" class="form-control" name="email">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <h1>Frequently asked <br> Questions</h1>
+                <p class="text-sm"> Can't find what you're looking for? <br> Explore our FAQs or contact us for further assistance.</p>
+                <img src="{% static 'img/man.png' %}" alt="people" class="img-fluid rounded-2xl">
             </div>
-            <div class="col-md-2">
-                <button type="submit" class="btn bg-deepGreen text-white">Submit</button>
+            <div class="col-md-6 align-items-center">
+                <div class="row">
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">What is VitaloG</h2>
+                        <div class="text-myBlack text-justify mt-4" id="toggleText1">
+                            <p>VitaloG is a friendly health community where people facing health challenges come together. Through virtual support groups, chat rooms, and access to verified professionals, it helps build connections and strength. With accurate information and friendly support, VitaloG helps you make better health choices. Join our community today and feel supported on your health journey.</p>
+                            <p class="more" onclick="toggleText('toggleText1')">Read more</p>
+                        </div>
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">How does it work</h2>
+                        <div class="text-myBlack text-justify mt-4" id="toggleText2">
+                            <p>VitaloG works by allowing users to sign up and gain access to a supportive community of individuals facing similar health challenges. Within this community, users can connect with others, access verified information, and receive support from professionals. By facilitating these connections and resources, Vitalog aims to combat feelings of isolation and loneliness, fostering a sense of belonging and empowerment among its users.</p>
+                            <p class="more" onclick="toggleText('toggleText2')">Read more</p>
+                        </div>
+                    </div>
+                    <div class="col-md-10 mb-4">
+                        <h2 class="text-deepBlue font-bold mt-4">How will you handle my medical details</h2>
+                        <div class="text-myBlack text-justify mt-4" id="toggleText3">
+                            <p>We take the privacy and security of your medical details seriously at Vitalog, adhering to globally accepted standards to ensure your information is safeguarded. Our approach involves implementing robust encryption protocols to protect data both in transit and at rest. Additionally, we strictly adhere to regulations such as HIPAA (Health Insurance Portability and Accountability Act) and GDPR (General Data Protection Regulation), ensuring that your medical information is handled with the utmost confidentiality and transparency. Our platform is designed with privacy-enhancing features, granting you control over your data and enabling you to manage consent preferences. Rest assured that your medical details are treated with the highest level of care and security on Vitalog.</p>
+                            <p class="more" onclick="toggleText('toggleText3')">Read more</p>
+                        </div>
+                    </div>   
+                </div>
             </div>
-        </form>
-    </div>
-    <br>
-</div> 
+        </div>
+        <div class="container">
+            <h1 class="text-center px-4">Join VitaloG today! Register with your email to access exclusive benefits at launch and ensure you're the first to know when we go live. Your community awaits.</h1>
+            <br>
+            <h1 class="text-center px-4">Join our WaitList</h1>
+            <form class="row g-3 justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <input type="email" placeholder="Enter your email" class="form-control" name="email">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn bg-deepGreen text-white">Submit</button>
+                </div>
+            </form>
+        </div>
+        <br>
+    </div> 
 </section>
+
+
 
 
 {% endblock %}
