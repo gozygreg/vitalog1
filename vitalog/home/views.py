@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from .models import ContactMessage
 from django.core.mail import send_mail
 from django.contrib import messages
 
@@ -11,6 +12,10 @@ def contact(request):
         message_name = request.POST['message-name']
         message_email = request.POST['message-email']
         message = request.POST['message']
+
+        # Save the message to the database
+        ContactMessage.objects.create(name=message_name, email=message_email, message=message)
+
 
         send_mail(
             'Welcome to Vitalog:' + message_name, #email subject
