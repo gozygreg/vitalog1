@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Page Title{% endblock %}
+
+{% block content %}
+
+<!-- ***** Contact Area Start ***** -->
+<br>
+<section class="vitalog-contact-area mt-50 mb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="google-maps mb-100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4549.496151732041!2d-0.17361786284814065!3d51.55668317541564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876107fc9a4b8e1%3A0x4fc838aa9490ef6b!2sHampstead%2C%20London!5e0!3m2!1sen!2suk!4v1708658760902!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-12 col-md-4">
+          <div class="contact-information bg-myBrown text-deepBlue">
+            <h5>Address</h5>
+            <p>20 Hampstead Road, NW3 7AD London</p>
+
+            <h5>Phone</h5>
+            <p>+84. 2252. 2250. 122</p>
+
+            <h5>Fax</h5>
+            <p>+84. 2252. 2250. 125</p>
+
+            <h5>Email</h5>
+            <p class="mb-0">community.vitalog@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-12 col-md-8">
+          <div class="contact-form">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h2>Get In Touch</h2>
+              <div class="line"></div>
+            </div>
+            <!-- Form -->
+            <form action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                </div>
+                
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success">Send Message</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+  <!-- ***** Contact Area End ***** -->
+
+
+{% endblock %}

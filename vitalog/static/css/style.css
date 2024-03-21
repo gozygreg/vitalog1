@@ -198,3 +198,72 @@ section {
 #toggleText3 p:nth-child(n+2) {
   display: none;
 }
+
+
+
+
+/* CONTACT PAGE CSS */
+
+.vitalog-contact-area {
+  position: relative;
+  z-index: 1;
+}
+
+.vitalog-contact-area .google-maps {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 470px;
+}
+
+@media only screen and (max-width: 767px) {
+  .vitalog-contact-area .google-maps {
+    height: 280px;
+  }
+}
+
+.vitalog-contact-area .google-maps iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contact-information {
+  position: relative;
+  z-index: 1;
+  padding: 30px 50px;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-information {
+    margin-bottom: 100px;
+  }
+}
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  height: 46px;
+  padding: 0 15px;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.contact-form .form-control:focus {
+  box-shadow: none;
+  border-color: #00aeef;
+}
+
+.contact-form textarea.form-control {
+  height: 110px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* CONTACT PAGE CSS ENDS */
