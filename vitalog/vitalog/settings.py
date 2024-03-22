@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'home',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -116,6 +121,14 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+
+# configure cloudinary settings
+cloudinary.config(
+    cloud_name="dezgpatyj",
+    api_key="598943221384968",
+    api_secret="A-zrkiAa9WvEd7XjtK_LUqDwXmo",
+)
 
 
 # Static files (CSS, JavaScript, Images)

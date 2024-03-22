@@ -56,7 +56,7 @@
                 <a class="nav-link" href="#">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="{% url 'post_list' %}">Blog</a>
               </li>
               <li class="nav-item">
                 <button class="btn btn-success">Join Our Waitlist</button>
@@ -118,9 +118,15 @@
                         <div class="col-md-4">
                             <h2>Quick Links</h2>
                             <ul>
-                                <li>Home</li>
-                                <li>Blog</li>
-                                <li>Contact</li>
+                                <li>
+                                    <a class="navbar-brand" href="{% url 'index' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'post_list' %}">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-md-4">
