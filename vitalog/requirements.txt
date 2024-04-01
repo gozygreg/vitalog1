@@ -1,0 +1,11 @@
+asgiref==3.7.2
+cloudinary==1.39.1
+crispy-bootstrap4==2024.1
+Django==5.0.3
+django-cloudinary-storage==0.3.0
+django-crispy-forms==2.1
+django-extensions==3.2.3
+django-summernote==0.8.20.0
+pillow==10.2.0
+python-dotenv==1.0.1
+sqlparse==0.4.4

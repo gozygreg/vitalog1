@@ -16,7 +16,7 @@ class Post(models.Model):
     content = models.TextField()
     image = CloudinaryField(
         "image",
-        default="https://res.cloudinary.com/dezgpatyj/image/upload/v1688422406/blog_02_e9po0t.jpg",
+        default="placeholder",
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

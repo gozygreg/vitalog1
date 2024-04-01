@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Page Title{% endblock %}
+
+{% block content %}
+
+<!-- Centered and Responsive Form -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <section class="blog-detail">
+                <h1 class="text-center">Join Our Waitlist</h1>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <br>
+                    <button type="submit" class="btn btn-success">Join</button>
+                </form>
+                <br>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- End of Centered and Responsive Form -->
+
+{% endblock %}

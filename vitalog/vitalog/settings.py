@@ -16,8 +16,11 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+from dotenv import load_dotenv
+load_dotenv()
 
 
 # Quick-start development settings - unsuitable for production
@@ -44,8 +47,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_summernote',
+    'cloudinary_storage',
+    'crispy_forms',
+    'crispy_bootstrap4',
+    'django_extensions',
     'home',
     'blog',
+    'waitlist',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +67,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'vitalog.urls'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -136,6 +148,9 @@ cloudinary.config(
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

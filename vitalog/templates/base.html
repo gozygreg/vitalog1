@@ -53,13 +53,13 @@
                 <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="{% url 'index' %}#faq-section">FAQ</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'post_list' %}">Blog</a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-success">Join Our Waitlist</button>
+                <a class="btn btn-success" href="{% url 'waitlist:join' %}">Join Our Waitlist</a>
               </li>
             </ul>
           </div>
