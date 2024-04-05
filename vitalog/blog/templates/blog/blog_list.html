@@ -20,7 +20,7 @@
                         {% if "placeholder" in post.image.url %}
                         <img src="https://res.cloudinary.com/dezgpatyj/image/upload/v1688422406/blog_02_e9po0t.jpg" alt="default-image" style="max-width: 100%; height: auto;">
                         {% else %}
-                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto;">
                         
                         {% endif %}
                     </figure>

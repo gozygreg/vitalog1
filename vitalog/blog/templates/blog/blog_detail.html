@@ -22,7 +22,7 @@
                      {% if "placeholder" in post.image.url %}
                      <img src="{% static 'home/images/blog/blog_02.jpg' %}" alt="default-image">
                      {% else %}
-                     <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                     <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
                      {% endif %}
                  </figure>
                  <p>{{ post.content | safe }}</p>
