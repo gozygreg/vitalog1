@@ -69,6 +69,40 @@ section {
   .more {
     display: none;
   }
+
+  .why-vitalog {
+    background-color: transparent !important;
+  }
+
+  .col-sm-12.text-center img {
+    margin: 0 auto;
+    /* Centers the images horizontally */
+    display: block;
+    /* Ensures the images are displayed as blocks */
+  }
+}
+
+
+@media (max-width: 767px) {
+  .why-vitalog img {
+    margin: 0 auto;
+    /* Centers the images horizontally */
+    display: block;
+    /* Ensures the images are displayed as blocks */
+  }
+
+  .why-vitalog {
+    border-radius: 10px;
+    /* Add rounded corners to the border */
+    margin-bottom: 20px;
+    /* Add space between each card */
+    padding: 20px;
+    /* Add padding inside each card */
+    transform: translateZ(20px);
+    /* Offset the cards forward towards the screen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    /* Add a shadow effect */
+  }
 }
 
 

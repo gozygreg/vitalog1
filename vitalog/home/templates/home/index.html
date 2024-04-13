@@ -17,11 +17,11 @@
                 <h1 class="text-deepBlue">Our Community</h1>
             </div>
             <p>Health challenges can be overwhelming, and no one should navigate them alone.</p>
-            <a href="/" class="btn btn-success">Join our waitlist</a> 
+            <a href="{% url 'waitlist:join' %}" class="btn btn-success">Join our waitlist</a> 
             <hr class="d-md-none">
         </div>
-        <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
-            <div class="position-absolute w-100 h-100 bg-black opacity-50"></div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center position-relative" >
+            <div class="position-absolute w-100 h-100"></div>
             <img src="{% static 'img/community.png' %}" alt="people" class="img-fluid" style="color:transparent">
         </div>
     </div>
@@ -204,44 +204,45 @@
                 <span class="text-deepGreen">VitaloG?</span>
             </h1>
         </div>
+        <br>
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6 mb-4">
                 <img src="{% static 'img/people.png' %}" alt="people" class="img-fluid rounded-2xl">
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                    
+                    <div class="col-md-10 mb-4 col-sm-12 why-vitalog" style="background-color: #d3303065;">
+                        <br>
                         <img src="{% static 'img/icon1.png' %}" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="col-md-10 mb-4">
                         <h2 class="text-deepBlue font-bold mt-4">Empowering Community Support</h2>
                         <p class="text-myBlack text-justify mt-4">Join a resilient community of individuals on similar health journeys. Vitalog provides a diverse ecosystem of verified health professionals and empathetic peers, fostering a sense of belonging and support.</p>
                     </div>
-                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
-                        <img src="{% static 'img/icon2.png' %}" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="col-md-10 mb-4">
+                    
+                    <div class="col-md-10 mb-4 col-sm-12 why-vitalog" style="background-color: rgb(176 224 230)">
+                        <br>
+                        <img src="{% static 'img/icon2.png' %}" alt="icon" class="img-fluid text-center">
                         <h2 class="text-deepBlue font-bold mt-4">Virtual Support Groups and Dedicated Chat Rooms</h2>
                         <p class="text-myBlack text-justify mt-4">Engage in open dialogue and shared experiences through our virtual support groups and dedicated chat rooms. Connect with others facing similar challenges, exchange ideas, and find encouragement in a safe and inclusive space.</p>
                     </div>
-                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                    
+                    <div class="col-md-10 mb-4 col-sm-12 why-vitalog" style="background-color: #72555075">
+                        <br>
                         <img src="{% static 'img/icon3.png' %}" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="col-md-10 mb-4">
                         <h2 class="text-deepBlue font-bold mt-4">Verified Health Professionals</h2>
                         <p class="text-myBlack text-justify mt-4">Access personalized guidance from verified health professionals. Vitalog connects you with experts who can provide tailored advice through private consultations, ensuring you make informed decisions about your health.</p>
                     </div>
-                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                   
+                    <div class="col-md-10 mb-4 col-sm-12 why-vitalog" style="background-color: #0e98ba80">
+                        <br>
                         <img src="{% static 'img/icon4.png' %}" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="col-md-10 mb-4">
                         <h2 class="text-deepBlue font-bold mt-4">Informed Decision-Making</h2>
                         <p class="text-myBlack text-justify mt-4">Navigate your health journey with confidence. Vitalog combines accurate information, peer support, and professional guidance to empower you with the knowledge needed to make informed decisions.</p>
                     </div>
-                    <div class="col-md-2 mb-4 d-flex justify-content-center align-items-center">
+                    
+                    <div class="col-md-10 mb-4 col-sm-12 why-vitalog" style="background-color: #c17d4380">
+                        <br>
                         <img src="{% static 'img/icon5.png' %}" alt="icon" class="img-fluid">
-                    </div>
-                    <div class="col-md-10 mb-4">
                         <h2 class="text-deepBlue font-bold mt-4">Revolutionizing Healthcare Engagement</h2>
                         <p class="text-myBlack text-justify mt-4">We're not just a platform; we're a movement. Vitalog transforms the healthcare experience, making it a collaborative journey where you are understood, supported, and connected.</p>
                     </div>
@@ -250,6 +251,7 @@
         </div>
     </div> 
 </section>
+
 
 <!--BENEFITS OF VITALOG SECTION-->
 <section>
