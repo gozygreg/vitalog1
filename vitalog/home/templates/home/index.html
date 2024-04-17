@@ -267,7 +267,7 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="card why-vitalog" style="background-color: #d3303065;">
+                    <div class="why-vitalog" style="background-color: #ff4e6444">
                         <br>
                         <img src="{% static 'img/gameIcon.png' %}" alt="icon" class="img-fluid" style="max-width: 50px;">
                         <h2 class="text-deepBlue font-bold mt-4">Patients Seeking Support</h2>
@@ -279,7 +279,7 @@
                         </div>
                     </div>
             
-                    <div class="card why-vitalog" style="background-color: rgb(176 224 230);">
+                    <div class="why-vitalog" style="background-color: #b3804aa3">
                         <br>
                         <img src="{% static 'img/crossIcon.png' %}" alt="icon" class="img-fluid" style="max-width: 50px;">
                         <h2 class="text-deepBlue font-bold mt-4">Health Professionals Ready to Provide Help</h2>
@@ -291,7 +291,7 @@
                         </div>
                     </div>
             
-                    <div class="card why-vitalog" style="background-color: #72555075;">
+                    <div class="why-vitalog" style="background-color: #5c33cf44;">
                         <br>
                         <img src="{% static 'img/arrowIcon.png' %}" alt="icon" class="img-fluid" style="max-width: 50px;">
                         <h2 class="text-deepBlue font-bold mt-4">Organizations Dedicated to Health Causes</h2>
@@ -303,8 +303,9 @@
                         </div>
                     </div>
                 </div>
+                <br>
             </div>
-
+            
             <div class="col-md-6 mb-4">
                 <img src="{% static 'img/people2.png' %}" alt="people" class="img-fluid rounded-2xl">
             </div>
@@ -360,18 +361,13 @@
             </div>
         </div>
         <div class="container">
-            <h2 class="text-center px-4">Join VitaloG today! Register with your email to access exclusive benefits at launch  <br> and ensure you're the first to know when we go live. Your community awaits.</h2>
+            <h2 class="text-center px-4">Join VitaloG today! Register with your email to access exclusive benefits at launch <br> and ensure you're the first to know when we go live. Your community awaits.</h2>
             <br>
-            <h2 class="text-center px-4">Join our WaitList</h2>
-            <form class="row g-3 justify-content-center align-items-center">
-                <div class="col-md-6">
-                    <input type="email" placeholder="Enter your email" class="form-control" name="email">
-                </div>
-                <div class="col-md-2">
-                    <button type="submit" class="btn bg-deepGreen text-white">Submit</button>
-                </div>
-            </form>
+            <div class="text-center"> <!-- Added this div to center the link -->
+                <a class="btn btn-success align-items-center" href="{% url 'waitlist:join' %}">Join Our Waitlist</a>
+            </div>
         </div>
+        
         <br>
     </div> 
 </section>

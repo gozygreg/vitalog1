@@ -366,3 +366,10 @@ section {
 }
 
 /* OUR BLOG CSS ENDS */
+
+
+.disabled-link {
+  pointer-events: none;
+  color: gray; /* Optionally, change the color to indicate the link is disabled */
+  text-decoration: none; /* Optionally, remove underline */
+}
