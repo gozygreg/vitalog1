@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 from pathlib import Path
 import cloudinary
 import cloudinary.uploader
@@ -18,18 +19,19 @@ import cloudinary.api
 
 # # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-from dotenv import load_dotenv
 load_dotenv()
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-m6xxt*wcob79d%9u_x4j%37-tox(_qp5o)!c7d%j$4qk-4(#sm'
+SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
@@ -86,6 +88,10 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
