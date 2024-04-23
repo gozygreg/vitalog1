@@ -13,7 +13,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+import dj_database_url
 import cloudinary
+#from cloudinary_storage.storage import RawMediaCloudinaryStorage
 import cloudinary.uploader
 import cloudinary.api
 
@@ -35,6 +37,8 @@ DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
+
+#ALLOWED_HOSTS = ['vitalog.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
 
@@ -98,6 +102,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'vitalog.wsgi.application'
 
+DATABASES = {
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -142,12 +150,21 @@ USE_TZ = True
 
 
 # configure cloudinary settings
+CLOUDINARY_CLOUD_NAME = os.getenv('CLOUDINARY_CLOUD_NAME')
+CLOUDINARY_API_KEY = os.getenv('CLOUDINARY_API_KEY')
+CLOUDINARY_API_SECRET = os.getenv('CLOUDINARY_API_SECRET')
+
 cloudinary.config(
-    cloud_name="dezgpatyj",
-    api_key="598943221384968",
-    api_secret="A-zrkiAa9WvEd7XjtK_LUqDwXmo",
+    cloud_name=CLOUDINARY_CLOUD_NAME,
+    api_key=CLOUDINARY_API_KEY,
+    api_secret=CLOUDINARY_API_SECRET,
 )
 
+#cloudinary.config(
+    #cloud_name="dezgpatyj",
+    #api_key="598943221384968",
+    #api_secret="A-zrkiAa9WvEd7XjtK_LUqDwXmo",
+#)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
