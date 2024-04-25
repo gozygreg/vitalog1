@@ -1,1 +1,1 @@
-web: gunicorn vitalog.wsgi:application
+web: gunicorn vitalog.wsgi
