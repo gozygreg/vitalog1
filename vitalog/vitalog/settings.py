@@ -36,13 +36,21 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+DEBUG = True 
 
-#ALLOWED_HOSTS = ['8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = [
+    '8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io',
+    'https://vitalogg-462a66c49bc4.herokuapp.com',
+    ]
 
-ALLOWED_HOSTS = ['vitalog.herokuapp.com', 'localhost']
+#ALLOWED_HOSTS = ['vitalog.herokuapp.com', '8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
+#CSRF_TRUSTED_ORIGINS = ['https://8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io',
+    'https://vitalogg-462a66c49bc4.herokuapp.com',
+]
 
 
 # Application definition
