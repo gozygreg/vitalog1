@@ -38,9 +38,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key')
 #DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
+#ALLOWED_HOSTS = ['8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
 
-#ALLOWED_HOSTS = ['vitalog.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['vitalog.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
 
