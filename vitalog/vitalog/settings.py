@@ -35,7 +35,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default_secret_key')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+#DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-gozygreg-vitalog1-zo24wc179aq.ws-eu110.gitpod.io']
