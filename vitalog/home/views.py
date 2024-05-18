@@ -35,3 +35,10 @@ def contact(request):
     else: 
         #return page
         return render(request, 'home/contact.html', {})
+
+
+def terms_and_conditions(request):
+    return render(request, 'home/terms_and_conditions.html')
+
+def privacy_policy(request):
+    return render(request, 'home/privacy_policy.html')

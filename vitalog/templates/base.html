@@ -143,9 +143,15 @@
                         <div class="col-md-4">
                             <h2>Information</h2>
                             <ul>
-                                <li class="disabled-link">Privacy Policy</li>
-                                <li class="disabled-link">Terms & Condition</li>
-                                <li class="disabled-link">FAQ</li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'terms_and_conditions' %}">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="{% url 'privacy_policy' %}">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" class="nav-link" href="{% url 'index' %}#faq-section">FAQ</a>
+                                </li>
                             </ul>
                         </div>
                     </div>

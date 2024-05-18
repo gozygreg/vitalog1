@@ -48,8 +48,13 @@ section {
   width: 100%;
 }
 
-.text-sm.text-myGray.font-semibold {
+.text-sm.text-myGray.font-semibold,
+.testimonial {
   text-align: justify;
+}
+
+.testimonial {
+  text-align: left !important;
 }
 
 
@@ -372,6 +377,8 @@ section {
 
 .disabled-link {
   pointer-events: none;
-  color: gray; /* Optionally, change the color to indicate the link is disabled */
-  text-decoration: none; /* Optionally, remove underline */
+  color: gray;
+  /* Optionally, change the color to indicate the link is disabled */
+  text-decoration: none;
+  /* Optionally, remove underline */
 }
